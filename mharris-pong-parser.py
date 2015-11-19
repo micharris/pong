@@ -18,7 +18,7 @@ def response_SLA():
 				responseTimes = line.split()
 				try:
 					if(responseTimes[7].isdigit()):
-						if(int(responseTimes[7]) > 200): #200 ms is the max average response time per Alon
+						if(int(responseTimes[7]) > 200): #200 ms is the max average response time per Jesiah
 							print "SLA response time exceeded for 90th percentile: "+responseTimes[0]+responseTimes[1]+" was "+responseTimes[7]+" ms"
 				except IndexError:
 					print ''
